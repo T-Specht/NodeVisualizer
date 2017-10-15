@@ -1,0 +1,74 @@
+@import "Node.scss";
+
+
+$bg: rgb(220, 247, 255);
+
+body{
+    background: white;
+    font-family: Quicksand;
+    max-width: 1000px;
+    margin: 30px auto;
+    width: 95%;
+}
+
+.queue{
+    position: relative;
+    display: block;
+    background: rgb(220, 247, 255);
+    padding-bottom: 100px;
+
+
+    border: 5px dashed gray;
+
+    .nodes{
+        text-align: right;
+        padding: 20px 60px;
+        padding-left: 20px;
+        min-height: 50px;
+    }
+}
+
+h1{
+    font-family: Pacifico;
+    margin: 0;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+img.big{
+    position: absolute;
+    bottom: -100px;
+    height: 200px;
+    right: 0px;
+}
+
+.actions{
+    padding: 20px;
+    text-align: center;
+    div{
+        margin: 10px 0px;
+    }
+}
+
+button{
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px 20px;
+    border: 3px solid darken($bg, 80%);
+    cursor: pointer;
+    font-size: 1em;
+    font-family: Quicksand;
+
+    transition: background 100ms;
+
+    &:hover{
+        background: $bg;
+    }
+}
